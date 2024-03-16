@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+
+    <title>Mugiwara Jump</title>
+</head>
+
+<body>
+
+  
+
+    <div class="game-board">
+        <div class="score">
+            <p>Score: <score id="score">0</score></p>
+          </div>
+
+          <button id="settingsBtn" class="settings-btn">    <span class="material-symbols-outlined">
+            settings
+            </span></button>
+
+          <audio id="bgMusic" autoplay loop>
+            <source src="music/One Piece - We Are! 8-Bit.mp3" type="audio/mp3">
+            Seu navegador não suporta a tag de áudio.
+          </audio>
+
+<div id="settingsMenu" class="settings-menu">
+  <label for="volumeSlider">Volume:</label>
+  <input id="volumeSlider" type="range" min="0" max="100" value="50">
+</div>
+
+        <img src="imagens/clouds.png" class="clouds">
+        <img src="https://media.tenor.com/bU8W2-lHZhYAAAAi/luffy.gif" class="mario">
+        <img src="./imagens/pipe.png" class="pipe">
+
+ <!-- Tela de "Game Over" -->
+ <div id="gameOverScreen" class="hidden">
+    <div class="game-over-message">
+        <h1>Game Over</h1>
+        <p>Your Score: <span id="finalScore">0</span></p>
+        <input
+        class="reiniciar"
+        type="button"
+        value="reiniciar"
+        onclick="window.location.reload()"
+    /> 
+
+  
+    </div>
+ </div>
+
+
+</body>
+
+</html>
