@@ -61,6 +61,10 @@ body {
     background: linear-gradient(#87ceeb, #e0f6ff);
 }
 
+.clouds {
+    z-index: -999;
+}
+
 .pipe {
     position: absolute;
     bottom: 0;
